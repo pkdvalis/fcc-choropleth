@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fcc Choropleth</title>
+
+    <!-- You can import css from local files like this. -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Libraries can be included like this from a CDN. -->
+    <script src="https://unpkg.com/d3@5.16.0/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+  </head>
+  <body>
+    <section id="title">United States Educational Attainment</section>
+  <section id="description">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</section>
+    
+    <svg height=50 width=200 id="legend" viewBox="0 0 200 50">
+      <rect x=0 y=0 height=25 width=50 fill='#2F4858'></rect>
+      <rect x=50 y=0 height=25 width=50 fill='#86BBD8'></rect>
+      <rect x=100 y=0 height=25 width=50 fill='#F6AE2D'></rect>
+      <rect x=150 y=0 height=25 width=50 fill='#F26419'></rect>
+      <text x=0 y=42 fill='#2F4858'>0 - 11%</text>
+      <text x=45 y=42 fill='#86BBD8'>12 - 22%</text>
+      <text x=100 y=42 fill='#F6AE2D'>23 - 34%</text>
+      <text x=165 y=42 fill='#F26419'>35%+</text>
+  </svg>
+
+    <section id="sourcelink">
+      Source:
+    	<a href="https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data/">USDA Economic Research Service</a>
+    </section>
+   
+      
+      
+
+    
+    <div id="choropleth"></div>
+    
+    
+    
+    <script src="bundle.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
